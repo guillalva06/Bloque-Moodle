@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/formhtml/db" VERSION="20160120" COMMENT="XMLDB file for Moodle blocks/formhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_formhtml" COMMENT="Table to save the movies on the form block">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="blockid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Foreign key to the block table"/>
+        <FIELD NAME="title" TYPE="char" LENGTH="30" NOTNULL="true" SEQUENCE="false" COMMENT="Title of the movie"/>
+        <FIELD NAME="description" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" COMMENT="Description of the movie"/>
+        <FIELD NAME="link" TYPE="char" LENGTH="50" NOTNULL="true" SEQUENCE="false" COMMENT="Url of the movie"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
